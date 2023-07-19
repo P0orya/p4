@@ -1,6 +1,7 @@
 :root{
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
+    --color-Underline: #f4392c;
 }
 
 html{
@@ -28,16 +29,37 @@ html{
     padding-left: 10px;
   }
    
-  .navbar-togg{
-    background: none;
+  .navbar-toggle {
+    border: none;
+    outline: none;
+    
+  }
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+  }
+
+  .navbar-toggler{
     opacity: 0.7;
     transition: opacity 0.5s;
   }
-  .navbar-togg:hover, .navbar-togg:active{
+  
+  .navbar-toggler:hover, .navbar-toggler:focus{
     opacity: 1;
     transition: opacity 0.5s;
   }
-  
+  .nav-item::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background:var(--color-Underline) ;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+  }
+  .nav-item:hover::after{
+    width: 100%;
+  }
    /* .logo{
     width: 80px;
     position: absolute;
