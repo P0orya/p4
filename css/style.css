@@ -70,6 +70,10 @@ html{
   h1{
     font-size: 3rem;
   }
+
+  h2{
+    font-size: 2rem;
+  }
  
   p{
     font-size: 2rem;
@@ -78,6 +82,10 @@ html{
   @media screen and (min-width: 990px){
     h1{
       font-size: 4rem;
+    }
+
+    h2{
+      font-size: 3rem;
     }
    
     p{
@@ -140,3 +148,10 @@ border-radius: 10px;
     width: 200px;
   }
 }
+
+/* Customer comments */
+.col:hover{
+  box-shadow: 0 0 20px 0px rgba(9, 9, 9, 0.2);
+  border-radius: 10px;
+  
+  }
