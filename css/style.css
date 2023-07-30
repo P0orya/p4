@@ -150,8 +150,31 @@ border-radius: 10px;
 }
 
 /* Customer comments */
-.col:hover{
-  box-shadow: 0 0 20px 0px rgba(9, 9, 9, 0.2);
-  border-radius: 10px;
+.grid{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(200px, 2fr));
+  grid-template-rows: repeat(1, minmax(200px, 2fr));
   
+}
+
+@media screen and (min-width: 990px){
+  .grid{
+    grid-template-columns: repeat(2, minmax(200px, 2fr));
+  grid-template-rows: repeat(2, minmax(200px, 2fr));
   }
+}
+.col{
+  margin: 5px;
+  background-color: rgba(244, 57, 44, 0.165);
+  border-radius: 20px;
+  }
+
+.com_img{
+  width: 50px;
+}
+
+@media screen and (min-width: 990px){
+  .com_img{
+    width: 70px;
+  }
+}
